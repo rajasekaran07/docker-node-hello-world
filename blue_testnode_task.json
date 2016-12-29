@@ -1,0 +1,18 @@
+{
+    "family": "blue_testnode_task",
+    "containerDefinitions": [
+        {
+            "image": "855158544446.dkr.ecr.us-east-1.amazonaws.com/mytestnode_rele:v_%BUILD_NUMBER%",
+            "name": "blue_testnode_task",
+            "cpu": 25,
+            "memory": 100,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 4000,
+                    "hostPort": 5000
+                }
+            ]
+        }
+    ]
+}
