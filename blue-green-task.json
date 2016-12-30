@@ -1,0 +1,18 @@
+{
+    "family": "blue-green-task",
+    "containerDefinitions": [
+        {
+            "image": "855158544446.dkr.ecr.us-east-1.amazonaws.com/blue-green-task-repo:v_%BUILD_NUMBER%",
+            "name": "blue-green-task",
+            "cpu": 25,
+            "memory": 100,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 4000,
+                    "hostPort": 5000
+                }
+            ]
+        }
+    ]
+}
